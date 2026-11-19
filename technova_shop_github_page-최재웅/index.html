@@ -49,10 +49,10 @@ const products=[
 {id:2,name:"MacBook Pro 14",brand:"APPLE",cat:"노트북",price:2490000,old:2690000,emoji:"💻",img:"img/product-2.webp",tag:"HOT",created:7},
 {id:3,name:"iPad Air 11",brand:"APPLE",cat:"태블릿",price:899000,old:999000,emoji:"▣",img:"img/product-3.webp",tag:"NEW",created:10},
 {id:4,name:"게이밍 데스크톱 RTX 5070",brand:"TECHNOVA PC",cat:"컴퓨터",price:1899000,old:2099000,emoji:"🖥️",img:"img/product-4.webp",tag:"추천",created:9},
-{id:5,name:"Galaxy Z Flip",brand:"SAMSUNG",cat:"스마트폰",price:1299000,old:1499000,emoji:"📱",tag:"인기",created:6},
-{id:6,name:"UltraBook Air 15",brand:"TECHBOOK",cat:"노트북",price:1390000,old:1590000,emoji:"💻",tag:"추천",created:5},
-{id:7,name:"무선 게이밍 마우스",brand:"TECH GEAR",cat:"주변기기",price:89000,old:109000,emoji:"🖱️",tag:"SALE",created:4},
-{id:8,name:"기계식 RGB 키보드",brand:"TECH GEAR",cat:"주변기기",price:129000,old:149000,emoji:"⌨️",tag:"BEST",created:3}
+{id:5,name:"Galaxy Z Flip",brand:"SAMSUNG",cat:"스마트폰",price:1299000,old:1499000,emoji:"📱",img:"img/product-5.webp",tag:"인기",created:6},
+{id:6,name:"UltraBook Air 15",brand:"TECHBOOK",cat:"노트북",price:1390000,old:1590000,emoji:"💻",img:"img/product-6.webp",tag:"추천",created:5},
+{id:7,name:"무선 게이밍 마우스",brand:"TECH GEAR",cat:"주변기기",price:89000,old:109000,emoji:"🖱️",img:"img/product-7.webp",tag:"SALE",created:4},
+{id:8,name:"기계식 RGB 키보드",brand:"TECH GEAR",cat:"주변기기",price:129000,old:149000,emoji:"⌨️",img:"img/product-8.webp",tag:"BEST",created:3}
 ];
 const tiers=[{name:"일반",rate:.01,min:0},{name:"실버",rate:.02,min:500000},{name:"골드",rate:.03,min:1500000},{name:"VIP",rate:.05,min:3000000}];
 let category="전체",sortMode="popular",cart=JSON.parse(localStorage.getItem("tn_cart")||"[]"),user=JSON.parse(localStorage.getItem("tn_user")||"null"),users=JSON.parse(localStorage.getItem("tn_users")||"[]"),authCurrent="login",slide=0;
