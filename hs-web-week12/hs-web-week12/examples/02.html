@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>12주차 예제 2 · ① 선택자 오타 ② script가 너무 일찍 실행됨</title>
+</head>
+<body>
+  <!--
+  12주차 예제 2 — ① 선택자 오타 ② script가 너무 일찍 실행됨
+  -->
+  <!-- ✗ head에 있는 script는 body보다 먼저 실행됩니다 -->
+  <head>
+    <script>
+      document.querySelector('#btn');   // null — 아직 btn이 안 만들어졌다
+    </script>
+  </head>
+  <body>
+    <button id="btn">버튼</button>
+  </body>
+
+  <!-- ✓ 해결 1: script를 </body> 바로 앞에 -->
+  <!-- ✓ 해결 2: defer 속성 — <script src="app.js" defer></script> -->
+  <!-- ✓ 해결 3: DOM이 다 만들어진 뒤 실행 -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelector('#btn');   // 이제 있습니다
+    });
+  </script>
+</body>
+</html>
